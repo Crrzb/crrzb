@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#img_profile{
+    height: 90px;
+    width: 90px;
+}
+
+#p_alejandro,#p_carranza{
+    margin: 0;
+}
