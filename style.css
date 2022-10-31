@@ -7,3 +7,8 @@
     height: 550px;
 }
 
+#col_about:hover,#col_projects:hover,#col_contact:hover {
+    border: solid 1px whitesmoke;
+    border-bottom: 0;
+}
+
