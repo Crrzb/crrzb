@@ -13,7 +13,7 @@
 </head>
 
 <body class="bg-dark">
-    <nav class="container-fluid sticky-top bg-dark">
+    <nav class="container-fluid sticky-top bg-dark mb-md-0">
         <div class="row border-bottom border-2 border-primary">
             <div class="col-4 col-md-6 my-2">
                 <a href="" class="text-decoration-none text-light ms-4 display-6 fs-5 fw-bolder">Carranza</a>
@@ -21,14 +21,17 @@
 
             <div class="col-8 col-md-6">
                 <div class="row text-center ">
-                    <div class="col  py-2" id="col_about" onclick="visit_link(this.id)">
-                        <a href="index.html#about_section" class="text-decoration-none text-light px-md-5" id="a_about">About</a>
+                    <div class="col  py-2 rounded" id="col_about" onclick="visit_link(this.id)">
+                        <a href="index.html#about_section" class="text-decoration-none text-light px-md-5"
+                            id="a_about">About</a>
                     </div>
-                    <div class="col  py-2" id="col_projects" onclick="visit_link(this.id)">
-                        <a href="index.html#projects_section" class="text-decoration-none text-light px-md-5" id="a_projects">Projects</a>
+                    <div class="col  py-2 rounded" id="col_projects" onclick="visit_link(this.id)">
+                        <a href="index.html#projects_section" class="text-decoration-none text-light px-md-5"
+                            id="a_projects">Projects</a>
                     </div>
-                    <div class="col  py-2" id="col_contact" onclick="visit_link(this.id)">
-                        <a href="index.html#contact_section" class="text-decoration-none text-light px-md-5" id="a_contact">Contact</a>
+                    <div class="col  py-2 rounded" id="col_contact" onclick="visit_link(this.id)">
+                        <a href="index.html#contact_section" class="text-decoration-none text-light px-md-5"
+                            id="a_contact">Contact</a>
                     </div>
                 </div>
             </div>
@@ -45,24 +48,27 @@
             <img src="img/coding_illustration.svg" alt="" id="ilustration" class="py-0 img-fluid">
         </div>
 
-        <section class="container text-light border-top border-1 border-primary py-2 py-md-5" id="about_section">
+        <section class="container text-light border-top border-1 border-primary py-md-5" id="about_section">
             <div class="row">
                 <div class="col-12 col-md-4 text-center">
                     <h3 class="display-3 border-5 border-bottom border-light pb-2 mb-5 rounded">About</h3>
                 </div>
                 <div class="col-12 col-md-8 text-start">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia nostrum, doloribus magni at
+                    <p class="display-1 fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia nostrum,
+                        doloribus magni at
                         atque, sapiente animi asperiores deleniti quo itaque neque? Nulla reprehenderit minus quisquam
                         labore veniam officiis? Fuga nemo fugiat repellat cum iure excepturi repudiandae blanditiis,
                         eius unde saepe aperiam nihil beatae numquam officia, explicabo aspernatur dolor quod ex!</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, dolore, enim blanditiis fuga
+                    <p class="display-1 fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
+                        dolore, enim blanditiis fuga
                         beatae est voluptas modi harum quia veniam vel quaerat soluta sint, rem natus obcaecati
                         doloribus? Odit reprehenderit nulla dolorum cumque libero. Dicta voluptates quibusdam
                         dignissimos laborum modi? Autem fugiat est minus voluptates pariatur quas reprehenderit dolores
                         neque!</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, dolore, enim blanditiis fuga
+                    <p class="display-1 fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
+                        dolore, enim blanditiis fuga
                         beatae est voluptas modi harum quia veniam vel quaerat soluta sint, rem natus obcaecati
                         doloribus? Odit reprehenderit nulla dolorum cumque libero. Dicta voluptates quibusdam
                         dignissimos laborum modi? Autem fugiat est minus voluptates pariatur quas reprehenderit dolores
@@ -71,17 +77,100 @@
             </div>
         </section>
 
-        <section class="container text-light border-top border-1 border-primary py-4">
+        <section class="container text-light border-top border-1 border-primary py-4 py-md-5" id="projects_section">
             <div class="row">
-                <div class="col">
+                <div class="col-12 col-md-4 text-center">
+                    <h3 class="display-3 border-5 border-bottom border-light pb-2 mb-5 rounded">Projects</h3>
+                </div>
 
+                <div class="col-12 col-md-8">
+                    <div class="card rounded shadow-lg border-1 border-primary bg-dark" id="card_dulce_luna">
+                        <div class="row">
+
+                            <div class="col-12 col-md-4 my-auto text-center">
+                                <img src="img/logo_dulce_luna.jpg" class="ms-md-5 ms-0" alt="" id="logo_dulce_luna">
+                            </div>
+
+                            <div class="col-12 col-md-8">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title text-light display-5">Dulce Luna Reposteria</h4>
+                                    <p class="card-text display-1 fs-5">This project is about a bakery business that
+                                        allows the
+                                        customer to consult prices, menu and photos, also they could make an order
+                                        through a link to whatsapp chat with a pre-build message with the order.</p>
+                                    <p class="card-text display-1 fs-5">Built with: <b>HTML, CSS, JS, Bootstrap.</b></p>
+                                    <a href="https://crrzb.github.io/dulce_luna"
+                                        class="btn btn-primary shadow-lg display-1 fs-5 text-center">Dulce Luna Reposteria <i class="fa-solid fa-arrow-right"></i></a>
+                                    <p class="card-text text-center"><small class="text-muted">Last updated:
+                                            04-10-2022</small></p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="card rounded shadow-lg border-1 border-primary bg-dark mt-4" id="card_dogshot">
+                        <div class="row">
+
+                            <div class="col-12 col-md-4 my-auto text-center">
+                                <img src="img/logo_dulce_luna.jpg" class="ms-md-5 ms-0" alt="" id="logo_dogshot">
+                            </div>
+
+                            <div class="col-12 col-md-8">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title text-light display-5">Dogshot Monterrey</h4>
+                                    <p class="card-text display-1 fs-5">Dogshot is about food, on this project we show
+                                        the customer three main sections, about owners, the menu and prices, phone
+                                        number and social media of the brand.</p>
+                                    <p class="card-text display-1 fs-5">Built with: <b>HTML, CSS, JS, Bootstrap.</b></p>
+                                    <a href="https://crrzb.github.io/dogshot_project"
+                                        class="btn btn-primary shadow-lg display-1 fs-5">Dogshot Monterrey <i class="fa-solid fa-arrow-right"></i></a>
+                                    <p class="card-text text-center"><small class="text-muted">Last updated:
+                                            04-10-2022</small></p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+
+                </div>
+                <div class="col-md-8 pt-3 text-md-start text-center">
+                    <a href="https://github.com/Crrzb?tab=repositories" class="btn btn-light rounded">View all <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
         </section>
+
+        <section class="container text-light border-top border-1 border-primary py-md-5" id="contact_section">
+            <div class="row">
+                <div class="col-12 col-md-4 text-center">
+                    <h3 class="display-3 border-5 border-bottom border-light pb-2 mb-5 rounded">Contact</h3>
+                </div>
+                <div class="col-12 col-md-8 text-start border border-primary rounded pt-5 px-md-5 px-4">
+                    <p class="mb-4 pb-3 display-6 border-bottom border-1 border-primary"><i class="fa-brands fa-linkedin"></i> LinkedIn.com/ <a href="https://www.linkedin.com/in/crrzb/" class="btn-lg btn-light display-5 border border-2 rounded-pill fw-bold text-center text-decoration-none shadow-sm">@crrzb <i class="fa-solid fa-arrow-right"></i></a></p>
+                    <p class="mb-4 pb-3 display-6 border-bottom border-1 border-primary"><i class="fa-brands fa-square-github"></i> GitHub.com/ <a href="https://www.github.com/crrzb" class="btn-lg btn-light display-5 border border-2 rounded-pill fw-bold text-center text-decoration-none shadow-sm">@crrzb <i class="fa-solid fa-arrow-right"></i></a></p>
+                    <p class="mb-4 pb-3 display-6 border-bottom border-1 border-primary"><i class="fa-solid fa-square-envelope"></i> Hotmail.com/ <a href="mailto: crrzb@hotmail.com" class="btn-lg btn-light display-5 border border-2 rounded-pill fw-bold text-center text-decoration-none shadow-sm">@crrzb <i class="fa-solid fa-arrow-right"></i></a></p>
+                    <p class="mb-4 pb-3 display-6 border-bottom border-1 border-primary"><i class="fa-brands fa-square-instagram"></i> Instagram.com/ <a href="https://wwww.instagram.com/crrzb" class="btn-lg btn-light display-5 border border-2 rounded-pill fw-bold text-center text-decoration-none shadow-sm">@crrzb <i class="fa-solid fa-arrow-right"></i></a></p>
+                    
+                    
+                </div>
+            </div>
+        </section>
+
+
     </main>
 
 </body>
 <script src="js/app.js"></script>
+<script src="https://kit.fontawesome.com/2ad18f15d2.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
