@@ -31,3 +31,17 @@ function visit_link(id){
     col.getElementsByTagName("a")[0].classList.add("text-dark");
     
 }
+
+let looper
+let deg = 0;
+function rotate_logo(e,speed){
+    const elemento = document.getElementById(e);
+    elemento.style.transform = "rotate("+deg+")";
+    looper = setTimeout('rotate_logo('+e+','+speed+')',speed);
+    deg++;
+    if(deg>359){
+        deg=1;
+    }
+}
+
+rotate_logo("logo",20);
