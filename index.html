@@ -17,168 +17,172 @@
 
 </head>
 
-<body class="bg-dark">
-    <nav class="container-fluid sticky-top bg-dark mb-md-0">
-        <div class="row border-bottom border-2 border-primary">
-            <div class="col-4 col-md-6 my-2">
-                <a href="" class="text-decoration-none text-light ms-4 display-6 fs-5 fw-bolder ms-4">
-                    <img src="img/favicon.svg" alt="" id="logo">
+<body class="">
+    <header>
+
+        <nav class="navbar bg-dark navbar-expand shadow font-monospace fixed-top">
+            <div class="container-fluid">
+                <a href="" class="navbar-brand text-light">
+                    <p class="d-none d-lg-inline">Alejandro Carranza</p>
+                    <img src="/img/favicon.svg" alt="" id="logo" class="">
                 </a>
-            </div>
 
-            <div class="col-8 col-md-6">
-                <div class="row text-center ">
-                    <div class="col  py-2 rounded" id="col_about" onclick="visit_link(this.id)">
-                        <a href="index.html#about_section" class="text-decoration-none text-light px-md-5"
-                            id="a_about">About</a>
-                    </div>
-                    <div class="col  py-2 rounded" id="col_projects" onclick="visit_link(this.id)">
-                        <a href="index.html#projects_section" class="text-decoration-none text-light px-md-5"
-                            id="a_projects">Projects</a>
-                    </div>
-                    <div class="col  py-2 rounded" id="col_contact" onclick="visit_link(this.id)">
-                        <a href="index.html#contact_section" class="text-decoration-none text-light px-md-5"
-                            id="a_contact">Contact</a>
-                    </div>
+
+
+                <div class="float-end">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#about" class="text-light nav-link btn-link btn-dark">ABOUT</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="#projects" class="text-light nav-link btn-link btn-dark">PROJECTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="text-light nav-link btn-link btn-dark">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://www.github.com/crrzb" class="text-light nav-link btn-link btn-dark"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </nav>
+    </header>
 
-        </div>
-
-    </nav>
-
-    <main class="pt-5">
-        <h1 class="text-light text-center display-1 fw-bolder">I'm Alejandro Carranza</h1>
-        <h2 class="text-light text-center display-6 fw-lighter">A Software Engineer.</h2>
-
-        <div class="container text-center py-0">
-            <img src="img/coding_illustration.svg" alt="" id="ilustration" class="py-0 img-fluid">
-        </div>
-
-        <section class="container text-light border-top border-1 border-primary py-md-5" id="about_section">
-            <div class="row">
-                <div class="col-12 col-md-4 text-center">
-                    <h3 class="display-3 border-5 border-bottom border-light pb-2 mb-5 rounded">About</h3>
-                </div>
-                <div class="col-12 col-md-8 text-start">
-                    <p class="display-1 fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia nostrum,
-                        doloribus magni at
-                        atque, sapiente animi asperiores deleniti quo itaque neque? Nulla reprehenderit minus quisquam
-                        labore veniam officiis? Fuga nemo fugiat repellat cum iure excepturi repudiandae blanditiis,
-                        eius unde saepe aperiam nihil beatae numquam officia, explicabo aspernatur dolor quod ex!</p>
-
-                    <p class="display-1 fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
-                        dolore, enim blanditiis fuga
-                        beatae est voluptas modi harum quia veniam vel quaerat soluta sint, rem natus obcaecati
-                        doloribus? Odit reprehenderit nulla dolorum cumque libero. Dicta voluptates quibusdam
-                        dignissimos laborum modi? Autem fugiat est minus voluptates pariatur quas reprehenderit dolores
-                        neque!</p>
-
-                    <p class="display-1 fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
-                        dolore, enim blanditiis fuga
-                        beatae est voluptas modi harum quia veniam vel quaerat soluta sint, rem natus obcaecati
-                        doloribus? Odit reprehenderit nulla dolorum cumque libero. Dicta voluptates quibusdam
-                        dignissimos laborum modi? Autem fugiat est minus voluptates pariatur quas reprehenderit dolores
-                        neque!</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="container text-light border-top border-1 border-primary py-4 py-md-5" id="projects_section">
-            <div class="row">
-                <div class="col-12 col-md-4 text-center">
-                    <h3 class="display-3 border-5 border-bottom border-light pb-2 mb-5 rounded">Projects</h3>
-                </div>
-
-                <div class="col-12 col-md-8">
-                    <div class="card rounded shadow-lg border-1 border-primary bg-dark" id="card_dulce_luna">
-                        <div class="row">
-
-                            <div class="col-12 col-md-4 my-auto text-center">
-                                <img src="img/logo_dulce_luna.jpg" class="ms-md-5 ms-0" alt="" id="logo_dulce_luna">
-                            </div>
-
-                            <div class="col-12 col-md-8">
-                                <div class="card-body text-center">
-                                    <h4 class="card-title text-light display-5">Dulce Luna Reposteria</h4>
-                                    <p class="card-text display-1 fs-5">This project is about a bakery business that
-                                        allows the
-                                        customer to consult prices, menu and photos, also they could make an order
-                                        through a link to whatsapp chat with a pre-build message with the order.</p>
-                                    <p class="card-text display-1 fs-5">Built with: <b>HTML, CSS, JS, Bootstrap.</b></p>
-                                    <a href="https://crrzb.github.io/dulce_luna"
-                                        class="btn btn-primary shadow-lg display-1 fs-5 text-center">Dulce Luna Reposteria <i class="fa-solid fa-arrow-right"></i></a>
-                                    <p class="card-text text-center"><small class="text-muted">Last updated:
-                                            04-10-2022</small></p>
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-
-                    <div class="card rounded shadow-lg border-1 border-primary bg-dark mt-4" id="card_dogshot">
-                        <div class="row">
-
-                            <div class="col-12 col-md-4 my-auto text-center">
-                                <img src="img/logo_dulce_luna.jpg" class="ms-md-5 ms-0" alt="" id="logo_dogshot">
-                            </div>
-
-                            <div class="col-12 col-md-8">
-                                <div class="card-body text-center">
-                                    <h4 class="card-title text-light display-5">Dogshot Monterrey</h4>
-                                    <p class="card-text display-1 fs-5">Dogshot is about food, on this project we show
-                                        the customer three main sections, about owners, the menu and prices, phone
-                                        number and social media of the brand.</p>
-                                    <p class="card-text display-1 fs-5">Built with: <b>HTML, CSS, JS, Bootstrap.</b></p>
-                                    <a href="https://crrzb.github.io/dogshot_project"
-                                        class="btn btn-primary shadow-lg display-1 fs-5">Dogshot Monterrey <i class="fa-solid fa-arrow-right"></i></a>
-                                    <p class="card-text text-center"><small class="text-muted">Last updated:
-                                            04-10-2022</small></p>
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-            <div class="row">
-                <div class="col-md-4">
-
-                </div>
-                <div class="col-md-8 pt-3 text-md-start text-center">
-                    <a href="https://github.com/Crrzb?tab=repositories" class="btn btn-light rounded">View all <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </section>
-
-        <section class="container text-light border-top border-1 border-primary py-md-5" id="contact_section">
-            <div class="row">
-                <div class="col-12 col-md-4 text-center">
-                    <h3 class="display-3 border-5 border-bottom border-light pb-2 mb-5 rounded">Contact</h3>
-                </div>
-                <div class="col-12 col-md-8 text-start border border-primary rounded pt-5 px-md-5 px-4">
-                    <p class="mb-4 pb-3 display-6 border-bottom border-1 border-primary"><i class="fa-brands fa-linkedin"></i> LinkedIn.com/ <a href="https://www.linkedin.com/in/crrzb/" class="btn-lg btn-light display-5 border border-2 rounded-pill fw-bold text-center text-decoration-none shadow-sm">@crrzb <i class="fa-solid fa-arrow-right"></i></a></p>
-                    <p class="mb-4 pb-3 display-6 border-bottom border-1 border-primary"><i class="fa-brands fa-square-github"></i> GitHub.com/ <a href="https://www.github.com/crrzb" class="btn-lg btn-light display-5 border border-2 rounded-pill fw-bold text-center text-decoration-none shadow-sm">@crrzb <i class="fa-solid fa-arrow-right"></i></a></p>
-                    <p class="mb-4 pb-3 display-6 border-bottom border-1 border-primary"><i class="fa-solid fa-square-envelope"></i> Hotmail.com/ <a href="mailto: crrzb@hotmail.com" class="btn-lg btn-light display-5 border border-2 rounded-pill fw-bold text-center text-decoration-none shadow-sm">@crrzb <i class="fa-solid fa-arrow-right"></i></a></p>
-                    <p class="mb-4 pb-3 display-6 border-bottom border-1 border-primary"><i class="fa-brands fa-square-instagram"></i> Instagram.com/ <a href="https://wwww.instagram.com/crrzb" class="btn-lg btn-light display-5 border border-2 rounded-pill fw-bold text-center text-decoration-none shadow-sm">@crrzb <i class="fa-solid fa-arrow-right"></i></a></p>
-                    
-                    
-                </div>
-            </div>
-        </section>
-
-
+    <main class="container-fluid vh-100 pt-5 text-center bg-dark ">
+        <h1 class="text-light text-center py-5 font-monospace fw-bolder display-1 w-sm-75 w-md-50 mx-auto mt-4">Welcome
+            to
+            Alejandro Carranza's portfolio</h1>
+        <a href="#projects" class="btn btn-lg shadow btn-dark border border-light">KNOW MY WORK <i class="fa-solid fa-arrow-down"></i></a>
     </main>
+
+    <section class="container-fluid bg-light pb-5" id="about">
+        <div class="row">
+            <div class="col-md-6 col-sm-12" id="col_foto">
+
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <p class="display-6 text-primary mt-5 pt-5 px-5 font-monospace fw-bold">ABOUT</p>
+                <p class="pt-5 px-5 text-start">I am a software engineer from Monterrey Nuevo Leon, I am passionate
+                    about technology and
+                    creating applications and web pages that can help to give visibility to a product or brand in the
+                    digital world.
+
+                </p>
+
+                <p class="px-5 text-start">
+                    I have a vast knowledge of different technologies such as HTML, CSS, Javascript and boostrap for
+                    frontend.
+                    For backend I'm working with Node Js, Express, Java, React js. In database area I have knowledge
+                    about MySQL and MongoDB.
+
+                </p>
+
+                <p class="px-5 text-start">
+                    Besides having acquired the basics of computer science in college, I have the ability to learn
+                    quickly about any technology on my own.
+                </p>
+
+                <div class="container text-start px-5 ">
+
+                    <a href="#projects" class="">
+                        <p class="fw-bold d-inline me-2">Take a look at the projects I've worked on</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid py-5" id="projects">
+        <div class="container pt-5">
+            <p class="display-6 text-primary mt-1 pt-4 px-5 font-monospace fw-bold text-center">PROJECTS</p>
+            <!-- <p class="display-6 text-center">These are some of the projects </p> -->
+        </div>
+
+        <div class="container-fluid">
+            <div class="row border border-primary rounded px-3 pt-3 shadow-lg">
+                <div class="col-12 mb-2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-4 text-center py-4">
+                                <div class="border border-3 border-primary w-75 rounded shadow d-inline-block"
+                                    style="max-height: fit-content; max-width: fit-content;">
+                                    <img src="img/logo_dulce_luna.jpg" alt="" class="w-100" id="img_proyecto">
+                                    <p class="text-center display-6 fs-3 fw-bolder text-primary" id="nombre_proyecto">
+                                        Dulce luna</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-8 py-4">
+                                <div class="container d-inline px-0 text-start">
+                                    <p class="d-inline display-6 fs-4 fw-bold text-secondary text-start"
+                                        id="desc_proyecto">Website for sale of cakes and
+                                        desserts in Monterrey, with image carousel, menu with interaction to create your
+                                        order
+                                        and finalize the order through a Whatsapp button to a chat with the preset
+                                        message with
+                                        the customer's order.
+                                    </p>
+                                    <p class="display-6 fs-6 py-2  text-secondary" id="build_proyecto">Built with:
+                                        Javascript, HTML5, CSS3 and
+                                        Bootstrap.</p>
+                                    <a href="https://crrzb.github.io/dulce_luna" target="_blank"
+                                        class="text-primary fw-bold" id="link_proyecto">Visitar sitio web <i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="col-12 border-top border-primary py-2 text-center">
+                    <button class="btn btn-primary shadow" id="left_btn"> <i class="fa-solid fa-arrow-left"></i> </button>
+                    <p class="display-6 fs-5 mt-5 d-inline mx-2 fw-bold text-secondary" id="position"> 1 - 6 </p>
+                    <button class="btn btn-primary shadow" id="right_btn"> <i class="fa-solid fa-arrow-right"></i> </button>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="container-fluid bg-primary h-100 pt-5" id="contact">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 mx-auto">
+                <p class="display-6 text-light mt-1 pt-5 px-5 font-monospace fw-bold text-center">CONTACT</p>
+                <p class="text-center mx-auto text-light">If you are interested in my work, would like to collaborate or
+                    want to
+                    make your brand known, leave me your contact information so I can get in touch with you.</p>
+            </div>
+            <div class="col-12">
+                <div class="container bg-light rounded shadow-sm py-2 text-center" style="max-width: 500px;">
+                    <input type="text" class="form-control mt-2" placeholder="Nombre Completo">
+                    <input type="text" class="form-control mt-2" placeholder="Numero Celular">
+                    <input type="text" class="form-control mt-2" placeholder="Correo electronico">
+                    <input type="text" class="form-control mt-2" placeholder="Ciudad">
+                    <textarea type="text" class="form-control mt-2" placeholder="Comentarios"></textarea>
+                    <button class="btn btn-primary mx-auto  mt-2">Enviar</button>
+
+                </div>
+            </div>
+
+            <div class="col-12 border-top border-light mt-5 text-center py-3">
+                <a  class=" text-light display-6 fs-6 d-block"><i class="fa-solid fa-envelope"></i> alejandrocarranza.software@hotmail.com</a>
+                <a href="https://www.github.com/crrzb" class=" text-light"><i class="fa-brands fa-square-github mt-1"></i> Alejandro Carranza</a>
+            </div>
+        </div>
+
+    </section>
+
+
 
 </body>
 <script src="js/app.js"></script>
 <script src="https://kit.fontawesome.com/2ad18f15d2.js" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -186,6 +190,6 @@
     crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> -->
 
 </html>

@@ -1,47 +1,87 @@
-function visit_link(id){
+const descripciones = [
+    "Website for sale of cakes and desserts in Monterrey, with image carousel, menu with interaction to create your order and finalize the order through a Whatsapp button to a chat with the preset message with the customer's order.",
+    "Web application for children, with this application they can practice the multiplication tables by levels, each level is a multiplication table. They have the option to start doing a test and depending on the result start practicing that level or start from a specific level.",
+    "Web application in which obtaining the user's birthday, we can calculate the total days that a person can live and calculate how many has been used and with this print the amount and a percentage of weeks that the user has lived so far. There is also the option to view it by month.",
+    "In this project we simulate a survey for any service provider interested in measuring customer satisfaction. A series of questions in which with the answers we can measure from 1 the lowest to 5 the highest score.",
+    "This static website contains information about environment and sustainability, information about the planet earth and how it is formed, the systems that compose it and how they all work together. An informative website."
+]
 
-    const col1 = document.querySelector("#col_about");
-    const col2 = document.querySelector("#col_projects");
-    const col3 = document.querySelector("#col_contact");
-
-    const a_about = document.querySelector("#a_about");
-    const a_projects = document.querySelector("#a_projects");
-    const a_contact = document.querySelector("#a_contact");
-
-    const body_color = document.body.style.backgroundColor;
-    const h1_color = "#f8f9fa"; //text-light
-    col1.style.backgroundColor = body_color;
-    col2.style.backgroundColor = body_color;
-    col3.style.backgroundColor = body_color;
-    a_about.classList.remove("text-dark");
-    a_projects.classList.remove("text-dark");
-    a_contact.classList.remove("text-dark");
-
-    a_about.classList.add("text-light");
-    a_projects.classList.add("text-light");
-    a_contact.classList.add("text-light");
-    
+const imagenes = [
+    './img/logo_dulce_luna.jpg',
+    './img/proyecto_tablas.png',
+    './img/vida_restante.png',
+    './img/encuesta_servicio.png',
+    './img/ambiente_sustentabilidad.png'
+]
 
 
+const nombres = [
+    'Dulce Luna',
+    'Proyecto Tablas',
+    'Vida Restante',
+    'Encuesta Servicio',
+    'Ambiente y sustentabilidad'
+]
+
+const urls = [
+    'https://crrzb.github.io/dulce_luna',
+    'https://crrzb.github.io/proyecto_tablas',
+    'https://crrzb.github.io/vida_restante',
+    'https://crrzb.github.io/encuesta_servicio',
+    'https://crrzb.github.io/ambiente_sustentabilidad',
+
+]
+
+const builds = [
+    'HTML5, CSS3, Javascript y Bootstrap',
+    'HTML5, CSS3, Javascript y Bootstrap',
+    'HTML5, CSS3, Javascript y Bootstrap',
+    'HTML5, CSS3, Javascript y Bootstrap',
+    'HTML5, CSS3, Javascript y Bootstrap'
+] 
 
 
-    const col = document.querySelector("#"+id);
-    col.style.backgroundColor = h1_color;
-    window.location.href  = col.firstElementChild;
-    col.getElementsByTagName("a")[0].classList.add("text-dark");
-    
-}
+let total_proyectos = 5;
+let position = 0;
 
-let looper
-let deg = 0;
-function rotate_logo(e,speed){
-    const elemento = document.getElementById(e);
-    elemento.style.transform = "rotate("+deg+")";
-    looper = setTimeout('rotate_logo('+e+','+speed+')',speed);
-    deg++;
-    if(deg>359){
-        deg=1;
+const btn_left = document.getElementById('left_btn')
+const btn_right = document.getElementById('right_btn')
+const descripcion = document.getElementById('desc_proyecto')
+const img = document.getElementById('img_proyecto')
+const nombre = document.getElementById('nombre_proyecto')
+const url = document.getElementById('link_proyecto')
+const build = document.getElementById('build_proyecto')
+const p_position = document.getElementById('position')
+
+btn_left.addEventListener('click', back)
+btn_right.addEventListener('click',forward)
+mostar_proyecto()
+
+function back(){
+    if(position!=0){
+        position--;
+    }else{
+        position=total_proyectos-1;
     }
+
+    mostar_proyecto()
 }
 
-rotate_logo("logo",20);
+function forward(){
+    if(position!=total_proyectos-1){
+        position++;
+    }else{
+        position=0;
+    }
+
+    mostar_proyecto()
+}
+
+function mostar_proyecto(){
+    nombre.innerText = nombres[position]
+    img.src = imagenes[position]
+    descripcion.innerText = descripciones[position]
+    build.innerText = 'Built with: '+builds[position]
+    url.href = urls[position]
+    p_position.innerText = position+1+' - '+total_proyectos;
+}
